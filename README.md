@@ -1,14 +1,13 @@
-# ngx-alerts (DEPRECATED)
+# @full-fledged/alerts
 
-USE [https://www.npmjs.com/package/@full-fledged/alerts](https://www.npmjs.com/package/@full-fledged/alerts)
-
+### [Live demo](https://demo.mathijsblok.com)
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install ngx-alerts --save
+$ npm install @full-fledged/alerts --save
 ```
 
 and then from your Angular `AppModule`:
@@ -23,7 +22,7 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 // Import your library
-import { AlertModule } from 'ngx-alerts';
+import { AlertModule } from '@full-fledged/alerts';
 
 @NgModule({
   declarations: [
@@ -53,7 +52,7 @@ Once your library is imported, you can use its components and service in your An
 <h1>
   {{title}}
 </h1>
-<ngx-alerts></ngx-alerts>
+<ff-alerts></ff-alerts>
 ```
 
 ```typescript

@@ -7,7 +7,7 @@ import {ALERT_CONFIG} from '../alert.config';
 import {AlertConfig} from '../model/alert-config.model';
 
 @Component({
-  selector: 'ngx-alerts',
+  selector: 'ff-alerts',
   templateUrl: './alert.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./alert.component.scss'],
