@@ -1,6 +1,6 @@
 {
   "name": "@full-fledged/alerts",
-  "version": "11.0.1",
+  "version": "11.0.2",
   "license": "MIT",
   "peerDependencies": {
     "@angular/animations": "^11.0.0",
