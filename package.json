@@ -1,13 +1,13 @@
 {
-  "name": "ngx-alerts-demo",
+  "name": "ff-alerts-demo",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build:demo": "ng build --prod",
-    "build": "ng build ngx-alerts --prod",
-    "publish": "ng build ngx-alerts --prod && npm publish ./dist/lib --access public",
+    "build": "ng build ff-alerts --prod",
+    "publish": "ng build ff-alerts --prod && npm publish ./dist/lib --access public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AlertService} from '../../../../projects/ngx-alerts/src/lib/service/alert.service';
+import {AlertService} from '../../../../projects/ff-alerts/src/lib/service/alert.service';
 import {FormControl} from '@angular/forms';
 import {Subject} from 'rxjs';
 

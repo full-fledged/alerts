@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-alerts-demo": {
+    "ff-alerts-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/ngx-alerts-demo",
+            "outputPath": "dist/ff-alerts-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-alerts-demo:build"
+            "browserTarget": "ff-alerts-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-alerts-demo:build:production"
+              "browserTarget": "ff-alerts-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-alerts-demo:build"
+            "browserTarget": "ff-alerts-demo:build"
           }
         },
         "lint": {
@@ -89,39 +89,39 @@
         }
       }
     },
-    "ngx-alerts": {
-      "root": "projects/ngx-alerts",
-      "sourceRoot": "projects/ngx-alerts/src",
+    "ff-alerts": {
+      "root": "projects/ff-alerts",
+      "sourceRoot": "projects/fff-alerts/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-alerts/tsconfig.lib.json",
-            "project": "projects/ngx-alerts/ng-package.json"
+            "tsConfig": "projects/ff-alerts/tsconfig.lib.json",
+            "project": "projects/ff-alerts/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/ngx-alerts/ng-package.prod.json"
-            ,              "tsConfig": "projects/ngx-alerts/tsconfig.lib.prod.json"
+              "project": "projects/ff-alerts/ng-package.prod.json"
+            ,              "tsConfig": "projects/ff-alerts/tsconfig.lib.prod.json"
 }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-alerts/src/test.ts",
-            "tsConfig": "projects/ngx-alerts/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-alerts/karma.conf.js"
+            "main": "projects/ff-alerts/src/test.ts",
+            "tsConfig": "projects/ff-alerts/tsconfig.spec.json",
+            "karmaConfig": "projects/ff-alerts/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-alerts/tsconfig.lib.json",
-              "projects/ngx-alerts/tsconfig.spec.json"
+              "projects/ff-alerts/tsconfig.lib.json",
+              "projects/ff-alerts/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "ngx-alerts-demo"
+  "defaultProject": "ff-alerts-demo"
 }

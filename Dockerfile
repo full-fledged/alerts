@@ -12,6 +12,6 @@ RUN npm install && \
     npm run build:demo && \
     rm -rf ./node_modules && \
     cp ./nginx.conf /etc/nginx/conf.d/default.conf && \
-    cp -r ./dist/ngx-alerts-demo/* /usr/share/nginx/html
+    cp -r ./dist/ff-alerts-demo/* /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]

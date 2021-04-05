@@ -11,10 +11,10 @@
       "path": "./src/tsconfig.app.json"
     },
     {
-      "path": "./projects/ngx-alerts/tsconfig.lib.json"
+      "path": "./projects/ff-alerts/tsconfig.lib.json"
     },
     {
-      "path": "./projects/ngx-alerts/tsconfig.spec.json"
+      "path": "./projects/ff-alerts/tsconfig.spec.json"
     }
   ]
 }

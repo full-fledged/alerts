@@ -19,8 +19,8 @@
       "dom"
     ],
     "paths": {
-      "ngx-alerts": [
-        "dist/ngx-alerts"
+      "ff-alerts": [
+        "dist/ff-alerts"
       ]
     }
   }
