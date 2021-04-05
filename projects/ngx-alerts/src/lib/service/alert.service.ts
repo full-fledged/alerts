@@ -33,31 +33,30 @@ export class AlertService {
     return this.state.asObservable();
   }
 
-  public info(msg: string | { html: string }): void {
-    this.addAlert({content: msg, type: 'info'});
+  public info(msg: string | { html: string }, close$ = this.config.timeout > 0 ? timer(this.config.timeout) : null): void {
+    this.addAlert({content: msg, type: 'info'}, close$);
   }
 
-  public danger(msg: string | { html: string }): void {
-    this.addAlert({content: msg, type: 'danger'});
+  public danger(msg: string | { html: string }, close$ = this.config.timeout > 0 ? timer(this.config.timeout) : null): void {
+    this.addAlert({content: msg, type: 'danger'}, close$);
   }
 
-  public success(msg: string | { html: string }): void {
-    this.addAlert({content: msg, type: 'success'});
+  public success(msg: string | { html: string }, close$ = this.config.timeout > 0 ? timer(this.config.timeout) : null): void {
+    this.addAlert({content: msg, type: 'success'}, close$);
   }
 
-  public warning(msg: string | { html: string }): void {
-    this.addAlert({content: msg, type: 'warning'});
+  public warning(msg: string | { html: string }, close$ = this.config.timeout > 0 ? timer(this.config.timeout) : null): void {
+    this.addAlert({content: msg, type: 'warning'}, close$);
   }
 
   public close(alert: Alert): void {
     this.dispatcher.next({fn: AlertReducer.remove, alert: alert, config: this.config});
   }
 
-  private addAlert(alert: Alert): void {
+  private addAlert(alert: Alert, close$: Observable<any> | null): void {
     this.dispatcher.next({fn: AlertReducer.add, alert: alert, config: this.config});
-
-    if (this.config.timeout > 0) {
-      timer(this.config.timeout)
+    if (close$) {
+      close$
         .pipe(take(1))
         .subscribe(() => {
           this.dispatcher.next({fn: AlertReducer.remove, alert: alert, config: this.config});
