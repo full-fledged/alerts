@@ -6,9 +6,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build:demo": "ng build --prod",
-    "build": "ng build ff-alerts --prod",
-    "publish:dry-run": "ng build ff-alerts --prod",
-    "publish": "ng build ff-alerts --prod && npm publish ./dist/lib --access public",
+    "build": "ng build ff-alerts --configuration production",
+    "publish:dry-run": "ng build ff-alerts --configuration production",
+    "publish": "ng build ff-alerts --configuration production && npm publish ./dist/lib --access public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
