@@ -135,5 +135,7 @@
       }
     }
   },
-  "defaultProject": "ff-alerts-demo"
+  "cli": {
+    "analytics": "719ebdc3-a54c-4201-995c-5fd54e66306b"
+  }
 }

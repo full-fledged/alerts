@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AlertService} from '../../../../projects/ff-alerts/src/lib/service/alert.service';
-import {FormControl} from '@angular/forms';
+import {UntypedFormControl} from '@angular/forms';
 import {Subject} from 'rxjs';
 
 @Component({
@@ -9,7 +9,7 @@ import {Subject} from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
-  control = new FormControl();
+  control = new UntypedFormControl();
   close$ = new Subject();
 
   constructor(private alertService: AlertService) {
